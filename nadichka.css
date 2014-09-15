@@ -280,12 +280,9 @@ body{
 
 @-moz-document url(https://2ch.hk/soc/res/1337655.html)
 {
-    #title{
-        text-decoration: line-through;
-    }
     #title:before{
         text-decoration: none;
-        content: "Надячан";
+        content: "Надячан\a0—";
         display: block;
     }
 }
