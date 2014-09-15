@@ -25,7 +25,10 @@ a.post-reply-link{
 } 
 .post-message .unkfunc em{
     font-style: normal;
-} 
+}
+.post-wrapper {
+    margin: 0;
+}
 #title{
     font-family: Constantia, 'PT Serif', serif;
     font-size: 2em;
