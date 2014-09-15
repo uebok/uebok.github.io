@@ -282,7 +282,7 @@ body{
 {
     #title:before{
         text-decoration: none;
-        content: "Надячан";
+        content: "Надячан\a0—";
         display: block;
     }
 }
