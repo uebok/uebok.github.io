@@ -288,12 +288,12 @@ body{
     #title{
         visibility: hidden;
         position: relative;
-        display: block;
     }
     #title:after{
         visibility: visible;
         position: absolute;
         top: 0;
-        content: "Надячан";
+        content: "\AНадячан";
+        white-space: pre;
     }
 }
