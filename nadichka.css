@@ -283,11 +283,17 @@ body{
     border: none;
 }
 
-@-moz-document url(https://2ch.hk/soc/res/1337655.html)
+@-moz-document url-prefix(https://2ch.hk/soc/res/1337655.html)
 {
+    #title{
+        visibility: hidden;
+        position: relative;
+    }
     #title:before{
-        text-decoration: none;
-        content: "Надячан\a0—";
+        visibility: visible;
+        position: absolute;
+        top: 0;
         display: block;
+        content: "Надячан";
     }
 }
