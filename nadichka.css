@@ -282,18 +282,3 @@ body{
     background-color: transparent;
     border: none;
 }
-
-@-moz-document url-prefix(https://2ch.hk/soc/res/1337655.html)
-{
-    #title{
-        visibility: hidden;
-        position: relative;
-    }
-    #title:after{
-        visibility: visible;
-        position: absolute;
-        top: 0;
-        content: "\AНадячан";
-        white-space: pre;
-    }
-}
