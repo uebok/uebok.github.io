@@ -139,9 +139,12 @@ header > hr{
     empty-cells: hide;
 }
 
+.thread .post{
+    margin: 0 0 2.8em;
+}
 .thread .post,
 .mess-post{
-    padding: 0 0 1em 220px;
+    padding: 0 0 0 220px;
 }
 
 .post .post-message p{
