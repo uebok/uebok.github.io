@@ -141,9 +141,13 @@ header > hr{
 .thread .post{
     margin: 0 0 2.8em;
 }
-.thread .post,
-.mess-post{
-    padding: 0 0 1em 220px;
+/*.thread .post,
+.mess-post{*/
+.thread{
+    padding: 0 0 0 220px;
+}
+.thread .post{
+    padding-bottom: 1em;
 }
 .post .post-message p{
     margin: 0;
@@ -240,12 +244,11 @@ body{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     line-height: 24px;
-    padding: 10px;
+    padding: 14px 10px;
     color: #FFF;
 }
 .image .file-attr .filesize{
     display: none;
-    padding-top: 14px;
     border-top-left-radius: 3px;
 }
 .thread .post{
