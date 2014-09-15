@@ -118,6 +118,8 @@ header > hr{
 .post-message{
     padding: 10px;
 }
+.thread .post .ABU-refmap,
+.thread .post-details,
 .post-message{
     line-height: 24px;
 }
@@ -240,14 +242,18 @@ body{
 .thread .post{
     position: relative;
 }
+
+.thread .post .ABU-refmap{
+    padding-top: 16px;
+}
+
 .thread .post-details{
     display: block;
     text-align: right;
     position: absolute;
     float: left;
     width: 180px;
-    margin: -1px 0 0 -220px;
-    line-height: 24px;
+    margin: 14px 0 0 -220px;
     height: 100%;
 }
 /* Для выравнивания вправо */
