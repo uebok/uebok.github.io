@@ -289,7 +289,7 @@ body{
         visibility: hidden;
         position: relative;
     }
-    #title:before{
+    #title:after{
         visibility: visible;
         position: absolute;
         top: 0;
