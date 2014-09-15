@@ -168,6 +168,7 @@ input.turnmeoff,
 .file-attr a[href$=".png"],
 .file-attr a[href$=".gif"]{
     position: absolute;
+    display: block;
     visibility: hidden;
     height: 100%;
 }
