@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,400italic,700|PT+Sans:400,700italic,400italic,700|PT+Sans+Narrow:400,700|PT+Sans+Caption:400,700|PT+Serif+Caption:400,400italic|PT+Mono|Playfair+Display+SC:700italic|Kelly+Slab&subset=latin,cyrillic);
+
+html,
+body,
+.post-message,
+.post-message .unkfunc em{
+    font-family: 'PT Sans', Verdana, sans-serif;
+    font-size: 20px;
+    /*line-height: 120%;*/
+}
+.post-message em,
+.post-message .unkfunc {
+    font-family: 'PT Serif', Georgia, serif;
+}
+.post-message a:not(.post-reply-link):visited{
+    color: #551A8B; /* Лебедев одобряе */
+}
+a.post-reply-link{
+    text-decoration-style: dotted;
+    -moz-text-decoration-style: dotted;
+}
+.post-message .unkfunc{
+    font-style: italic;
+    color: #000;
+    background-color: #FE6;
+} 
+.post-message .unkfunc em{
+    font-style: normal;
+} 
+#title{
+    font-family: 'Constantia', serif;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 80%;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+}
+.posttime{
+    text-transform: uppercase;
+}
+span.spoiler{
+    background-color: transparent;
+    color: inherit;
+    position: relative;
+    display: inline-table;
+    overflow: hidden;
+}
+span.spoiler:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    /*height: 100%;
+    width: 100%;*/
+    background-size: 24px 24px;
+    background-position: 0% 0%;
+    background-image: linear-gradient(135deg, rgba(255, 238, 102, 0) 25%, #FE6 25%, #FE6 50%, rgba(255, 238, 102, 0) 50%, rgba(255, 238, 102, 0) 75%, #FE6 75%, #FE6);
+    /*background-image: linear-gradient(45deg, transparent 25%, #FE6 25%, #FE6 50%, transparent 50%, transparent 75%, #FE6 75%, #FE6);*/
+    content: "";
+    pointer-events: none;
+    transition: all 1s ease-out 0s;
+    /*opacity: 1.0;*/
+}
+span.spoiler:hover:after{
+    /*opacity: 0.0;*/
+    top: 100%;
+    bottom: 0%;
+    background-position: 150% 0%;
+}
+span.spoiler:hover{
+    /*border-bottom: 2px solid #FE6;*/
+    text-decoration: underline;
+    text-decoration-color: #FE6;
+    text-decoration-style: double;
+    -moz-text-decoration-color: #FE6;
+    -moz-text-decoration-style: double;
+    /*transition: all 1s step-end 0s;*/
+}
+.thread .post-details:hover > .desktop,
+.thread .post-details:hover .reflink{
+    /*opacity: 1.0;*/
+    visibility: visible;
+}
+.thread .post-details > .desktop,
+.thread .post-details .reflink{
+    /*opacity: 0.1; */
+    visibility: hidden;
+    transition: all 0.5s ease-out 0s;
+}
+.post-details,
+.mess-post,
+.ABU-refmap{
+    font-size: 13px;
+    opacity: .7;
+}
+.reply-label:after,
+.qr-header:after{
+    font-weight: bold;
+    content: " ДА ЗДРАВСТВУЕТ СОЛНЦЕЛИКАЯ НАДИЧКА"
+}
+.qr-header:after{
+    display: block;
+}
+.posts > hr,
+#posts-form > hr,
+header > hr{
+     opacity: 0.6;
+     background: center no-repeat url("http://static.diary.ru/userdir/1/8/3/8/1838896/80186825.png");
+     background-size: auto 40px;
+     height: 50px;
+     border: none;
+}
+.img.preview,
+.img.fullsize,
+.board-banner img,
+.post-message{
+     border-radius: 3px;
+}
+.board-banner img{
+    opacity: 0.5;
+    margin-bottom: 1em;
+}
+.thread .post-message{
+    background: none repeat scroll 0% 0% #DDD;
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+.post-message{
+    line-height: 24px;
+}
+.thread .post-details {
+    padding: 0;
+}
+
+.thread .post .post-message{
+    display: table-cell;
+    empty-cells: hide;
+}
+.thread .post{
+    margin: 0 0 2.8em;
+}
+.thread .post,
+.mess-post{
+    padding: 0 0 1em 220px;
+}
+.post .post-message p{
+    margin: 0;
+}
+.thread .post{
+    border: none;
+    background-color: #EEE;
+}
+.thread .oppost-wrapper,
+.thread .post-wrapper{
+    overflow:  visible;
+}
+/*clearfix*/
+.thread .post:after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.thread .reply{
+    min-width: 0;
+}
+
+input.turnmeoff,
+.passcode-banner{
+    display: none;
+}
+/*.file-attr .desktop,*/
+.file-attr a[href$=".webm"],
+.file-attr a[href$=".jpg"],
+.file-attr a[href$=".png"],
+.file-attr a[href$=".gif"]{
+    position: absolute;
+   /*text-indent: -9000px;*/
+    visibility: hidden;
+    height: 100%;
+}
+
+.file-attr a[href$=".webm"] + img{
+    display: none;
+}
+
+.file-attr a[href$=".webm"]:after{
+    content: "WEBM";
+}
+.file-attr a[href$=".png"]:after{
+    content: "PNG";
+}
+.file-attr a[href$=".gif"]:after{
+    content: "GIF";
+}
+
+.file-attr a[href$=".webm"]:after,
+.file-attr a[href$=".png"]:after,
+.file-attr a[href$=".gif"]:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    visibility: visible;
+    border-bottom-left-radius: 3px;
+}
+
+.thread .post .image{
+    margin: 0 5px 5px 0;
+}
+
+.post .image{
+    position: relative;
+}
+
+body.replypage .thread .reply .reflink:before{
+    content: ""; /* На хуй счётчики постов... */
+    margin: 0;
+}
+body.replypage .thread .post-wrapper:last-of-type .reply .reflink:before {
+    content: " #" counter(postcount, decimal) " "; /* ...кроме последнего. */
+    visibility: visible;
+    display: block;
+    white-space: pre;
+}
+body{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image:hover .file-attr .filesize {
+    z-index: 9000;
+    display: block;
+}
+.image .file-attr .filesize,
+.file-attr a[href$=".webm"]:after,
+.file-attr a[href$=".png"]:after,
+.file-attr a[href$=".gif"]:after{
+    pointer-events: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);*/
+    padding: 10px;
+    color: #FFF;
+    /*width: 100%;*/
+    /*transition: opacity 0.4s ease-out 0s;*/
+    /*font-weight: bold;*/
+}
+.image .file-attr .filesize{
+    display: none;
+    border-top-left-radius: 3px;
+}
+.thread .post{
+    position: relative;
+}
+.thread .post-details{
+    display: block;
+    text-align: right;
+    position: absolute;
+    float: left;
+    width: 180px;
+    margin: -1px 0 0 -220px;
+    line-height: 24px;
+    height: 100%;
+}
+/*для выравнивания вправо*/
+.thread .post-details .ananimas:after,
+.thread .post-details .post-email:after{
+    content: " ";
+    white-space: pre;
+    text-decoration: none;
+}
+
+.thread .post-details > *{
+    position: relative;
+}
+.thread .post-details .posttime,
+.thread .post-details .post-title{
+    display: block;
+}
