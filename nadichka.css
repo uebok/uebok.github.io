@@ -6,7 +6,6 @@ body,
 .post-message .unkfunc em{
     font-family: 'PT Sans', Verdana, sans-serif;
     font-size: 20px;
-    /*line-height: 120%;*/
 }
 .post-message em,
 .post-message .unkfunc {
@@ -49,45 +48,35 @@ span.spoiler:after{
     position: absolute;
     left: 0;
     top: 0;
-    right: 0;
-    bottom: 0;
+    height: 100%;
+    width: 100%;
     padding: 0;
-    /*height: 100%;
-    width: 100%;*/
     background-size: 24px 24px;
     background-position: 0% 0%;
     background-image: linear-gradient(135deg, rgba(255, 238, 102, 0) 25%, #FE6 25%, #FE6 50%, rgba(255, 238, 102, 0) 50%, rgba(255, 238, 102, 0) 75%, #FE6 75%, #FE6);
-    /*background-image: linear-gradient(45deg, transparent 25%, #FE6 25%, #FE6 50%, transparent 50%, transparent 75%, #FE6 75%, #FE6);*/
     content: "";
     pointer-events: none;
     transition: all 1s ease-out 0s;
-    /*opacity: 1.0;*/
 }
 span.spoiler:hover:after{
-    /*opacity: 0.0;*/
     top: 100%;
     bottom: 0%;
     background-position: 150% 0%;
 }
 span.spoiler:hover{
-    /*border-bottom: 2px solid #FE6;*/
     text-decoration: underline;
     text-decoration-color: #FE6;
     text-decoration-style: double;
     -moz-text-decoration-color: #FE6;
     -moz-text-decoration-style: double;
-    /*transition: all 1s step-end 0s;*/
 }
 .thread .post-details:hover > .desktop,
 .thread .post-details:hover .reflink{
-    /*opacity: 1.0;*/
     visibility: visible;
 }
 .thread .post-details > .desktop,
 .thread .post-details .reflink{
-    /*opacity: 0.1; */
     visibility: hidden;
-    transition: all 0.5s ease-out 0s;
 }
 .post-details,
 .mess-post,
@@ -156,7 +145,7 @@ header > hr{
 .thread .post-wrapper{
     overflow:  visible;
 }
-/*clearfix*/
+/* Сlearfix */
 .thread .post:after{
     content: ".";
     display: block;
@@ -168,17 +157,17 @@ header > hr{
     min-width: 0;
 }
 
+/* На хуй бесполезные галочки */
 input.turnmeoff,
 .passcode-banner{
     display: none;
 }
-/*.file-attr .desktop,*/
+
 .file-attr a[href$=".webm"],
 .file-attr a[href$=".jpg"],
 .file-attr a[href$=".png"],
 .file-attr a[href$=".gif"]{
     position: absolute;
-   /*text-indent: -9000px;*/
     visibility: hidden;
     height: 100%;
 }
@@ -217,11 +206,11 @@ input.turnmeoff,
 }
 
 body.replypage .thread .reply .reflink:before{
-    content: ""; /* На хуй счётчики постов... */
+    content: ""; /* На хуй все счётчики постов... */
     margin: 0;
 }
 body.replypage .thread .post-wrapper:last-of-type .reply .reflink:before {
-    content: " #" counter(postcount, decimal) " "; /* ...кроме последнего. */
+    content: " #" counter(postcount, decimal) " "; /* ...кроме самого последнего. */
     visibility: visible;
     display: block;
     white-space: pre;
@@ -242,12 +231,8 @@ body{
     pointer-events: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
-    /*background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);*/
     padding: 10px;
     color: #FFF;
-    /*width: 100%;*/
-    /*transition: opacity 0.4s ease-out 0s;*/
-    /*font-weight: bold;*/
 }
 .image .file-attr .filesize{
     display: none;
@@ -266,7 +251,7 @@ body{
     line-height: 24px;
     height: 100%;
 }
-/*для выравнивания вправо*/
+/* Для выравнивания вправо */
 .thread .post-details .ananimas:after,
 .thread .post-details .post-email:after{
     content: " ";
