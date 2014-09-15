@@ -243,10 +243,6 @@ body{
     position: relative;
 }
 
-.thread .post .ABU-refmap{
-    padding-top: 16px;
-}
-
 .thread .post-details{
     display: block;
     text-align: right;
