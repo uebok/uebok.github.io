@@ -278,6 +278,11 @@ body{
     display: block;
 }
 
+.thread .post.oppost .post-message{
+    background-color: transparent;
+    border: none;
+}
+
 @-moz-document url(https://2ch.hk/soc/res/1337655.html)
 {
     #title:before{
