@@ -278,7 +278,7 @@ body{
     display: block;
 }
 
-@document url(https://2ch.hk/soc/res/1337655.html)
+@-moz-document url(https://2ch.hk/soc/res/1337655.html)
 {
     #title:before{
         content: "Надячан";
