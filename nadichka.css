@@ -190,6 +190,7 @@ input.turnmeoff,
 .file-attr a[href$=".png"]:after,
 .file-attr a[href$=".gif"]:after{
     position: absolute;
+    z-index: 9000;
     bottom: 0;
     left: 0;
     text-decoration: none;
@@ -220,7 +221,7 @@ body{
     margin: 0 auto;
 }
 
-.image:hover .file-attr .filesize {
+.image:hover .file-attr .filesize{
     z-index: 9000;
     display: block;
 }
