@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,400italic,700|PT+Sans:400,700italic,400italic,700|PT+Sans+Narrow:400,700|PT+Sans+Caption:400,700|PT+Serif+Caption:400,400italic|PT+Mono|Playfair+Display+SC:700italic|Kelly+Slab&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,400italic,700|PT+Sans:400,700italic,400italic,700|PT+Sans+Narrow:400,700|PT+Sans+Caption:400,700|PT+Serif+Caption:400,400italic|PT+Mono|Playfair+Display+SC:700italic);
 
 html,
 body,
@@ -27,7 +27,7 @@ a.post-reply-link{
     font-style: normal;
 } 
 #title{
-    font-family: 'Constantia', serif;
+    font-family: 'Playfair Display SC', Constantia, serif;
     font-size: 2em;
     font-weight: 400;
     line-height: 80%;
