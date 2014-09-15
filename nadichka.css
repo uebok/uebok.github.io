@@ -48,8 +48,8 @@ span.spoiler:after{
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
+    right: 0;
+    bottom: 0;
     padding: 0;
     background-size: 24px 24px;
     background-position: 0% 0%;
@@ -60,7 +60,7 @@ span.spoiler:after{
 }
 span.spoiler:hover:after{
     top: 100%;
-    bottom: 0%;
+    bottom: 0;
     background-position: 150% 0%;
 }
 span.spoiler:hover{
@@ -194,7 +194,7 @@ input.turnmeoff,
     border-bottom-left-radius: 3px;
 }
 
-.thread .post .image{
+.post .image{
     margin: 0 5px 5px 0;
 }
 
