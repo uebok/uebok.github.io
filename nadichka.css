@@ -236,11 +236,13 @@ body{
     pointer-events: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
+    line-height: 24px;
     padding: 10px;
     color: #FFF;
 }
 .image .file-attr .filesize{
     display: none;
+    padding-top: 14px;
     border-top-left-radius: 3px;
 }
 .thread .post{
