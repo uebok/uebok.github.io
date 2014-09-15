@@ -123,6 +123,10 @@ header > hr{
 .post-message{
     line-height: 24px;
 }
+.thread .post .ABU-refmap{
+    margin-top: 16px;
+}
+
 .thread .post-details {
     padding: 0;
 }
