@@ -114,6 +114,8 @@ header > hr{
 .thread .post-message{
     background: none repeat scroll 0% 0% #DDD;
     border: 1px solid #CCC;
+}
+.post-message{
     padding: 10px;
 }
 .post-message{
