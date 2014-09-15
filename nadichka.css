@@ -123,7 +123,7 @@ header > hr{
     padding: 0;
 }
 
-.thread .post .post-message{
+.post .post-message{
     display: table-cell;
     empty-cells: hide;
 }
@@ -141,8 +141,8 @@ header > hr{
     border: none;
     background-color: #EEE;
 }
-.thread .oppost-wrapper,
-.thread .post-wrapper{
+.oppost-wrapper,
+.post-wrapper{
     overflow:  visible;
 }
 
