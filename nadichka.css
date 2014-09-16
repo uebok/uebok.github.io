@@ -98,17 +98,17 @@ span.spoiler:hover{
 .posts > hr,
 #posts-form > hr,
 header > hr{
-     opacity: 0.6;
-     background: center no-repeat url("http://static.diary.ru/userdir/1/8/3/8/1838896/80186825.png");
-     background-size: auto 40px;
-     height: 50px;
-     border: none;
+    opacity: 0.6;
+    background: center no-repeat url("http://static.diary.ru/userdir/1/8/3/8/1838896/80186825.png");
+    background-size: auto 40px;
+    height: 50px;
+    border: none;
 }
 .img.preview,
 .img.fullsize,
 .board-banner img,
 .post-message{
-     border-radius: 3px;
+    border-radius: 3px;
 }
 .board-banner img{
     opacity: 0.5;
@@ -202,7 +202,7 @@ input.turnmeoff,
     left: 0;
     text-decoration: none;
     visibility: visible;
-    border-bottom-left-radius: 3px;
+    /*border-bottom-left-radius: 3px;*/
 }
 
 .post .image{
@@ -243,11 +243,12 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
     line-height: 24px;
     padding: 14px 10px;
+    border-radius: 3px;
     color: #FFF;
 }
 .image .file-attr .filesize{
     display: none;
-    border-top-left-radius: 3px;
+    /*border-top-left-radius: 3px;*/
 }
 .thread .post{
     position: relative;
