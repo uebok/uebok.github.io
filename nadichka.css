@@ -218,10 +218,10 @@ body.replypage .thread .reply .reflink:before{
     content: ""; /* На хуй все счётчики постов... */
     margin: 0;
 }
-body.replypage .thread .post-wrapper:last-of-type .reply .reflink:after {
+body.replypage .thread .post-wrapper:last-of-type .reply .reflink:before {
     content: " #" counter(postcount, decimal) " "; /* ...кроме самого последнего. */
     visibility: visible;
-    /*display: block;*/
+    display: block;
     white-space: pre;
 }
 body{
@@ -260,7 +260,7 @@ body{
     float: left;
     width: 180px;
     margin: 14px 0 0 -220px;
-    height: 100%;
+    min-height: 100%;
 }
 /* Для выравнивания вправо */
 .thread .post-details .ananimas:after,
