@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700italic,400italic,700|PT+Sans:400,700italic,400italic,700|PT+Sans+Narrow:400,700|PT+Sans+Caption:400,700|PT+Serif+Caption:400,400italic|PT+Mono);
+
+html,
+body,
+.post-message,
+.post-message .unkfunc em{
+    font-family: 'PT Sans', Verdana, sans-serif;
+    font-size: 20px;
+}
+.post-message em,
+.post-message .unkfunc {
+    font-family: 'PT Serif', Georgia, serif;
+}
+.post-message a:not(.post-reply-link):visited{
+    color: #551A8B; /* Лебедев одобряе */
+}
+a.post-reply-link{
+    text-decoration-style: dotted;
+    -moz-text-decoration-style: dotted;
+}
+.post-message .unkfunc{
+    font-style: italic;
+    color: #000;
+    background-color: #FE6;
+} 
+.post-message .unkfunc em{
+    font-style: normal;
+}
+.post-wrapper {
+    margin: 0;
+}
+#title{
+    font-family: Constantia, 'PT Serif', serif;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 80%;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+}
+.posttime{
+    text-transform: uppercase;
+}
+span.spoiler{
+    background-color: transparent;
+    color: inherit;
+    position: relative;
+    display: inline-table;
+    overflow: hidden;
+}
+span.spoiler:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    background-size: 24px 24px;
+    background-position: 0% 0%;
+    background-image: linear-gradient(135deg, rgba(255, 238, 102, 0) 25%, #FE6 25%, #FE6 50%, rgba(255, 238, 102, 0) 50%, rgba(255, 238, 102, 0) 75%, #FE6 75%, #FE6);
+    content: "";
+    pointer-events: none;
+    transition: all 1s ease-out 0s;
+}
+span.spoiler:hover:after{
+    top: 100%;
+    bottom: 0;
+    background-position: 150% 0%;
+}
+span.spoiler:hover{
+    text-decoration: underline;
+    text-decoration-color: #FE6;
+    text-decoration-style: double;
+    -moz-text-decoration-color: #FE6;
+    -moz-text-decoration-style: double;
+}
+.thread .post-details:hover > .desktop,
+.thread .post-details:hover .reflink{
+    visibility: visible;
+}
+.thread .post-details > .desktop,
+.thread .post-details .reflink{
+    visibility: hidden;
+}
+.post-details,
+.mess-post,
+.ABU-refmap{
+    font-size: 13px;
+    opacity: .7;
+}
+.qr-header:after{
+    display: block;
+}
+.img.preview,
+.img.fullsize,
+.board-banner img,
+.post-message{
+    border-radius: 3px;
+}
+.board-banner img{
+    opacity: 0.5;
+    margin-bottom: 1em;
+}
+.thread .post-message{
+    background: none repeat scroll 0% 0% #DDD;
+    border: 1px solid #CCC;
+}
+.post-message{
+    padding: 10px;
+}
+.thread .post .ABU-refmap,
+.thread .post-details,
+.post-message{
+    line-height: 24px;
+}
+.thread .post .ABU-refmap{
+    margin-top: 16px;
+}
+
+.thread .post-details {
+    padding: 0;
+}
+
+.post .post-message{
+    display: table-cell;
+    empty-cells: hide;
+}
+
+.thread .post{
+    margin: 0 0 2.8em;
+}
+.thread .post,
+.mess-post{
+    padding: 0 0 0 220px;
+}
+
+.post .post-message p{
+    margin: 0;
+}
+.thread .post{
+    border: none;
+    background-color: #EEE;
+}
+.oppost-wrapper,
+.post-wrapper{
+    overflow:  visible;
+}
+
+/* Сlearfix */
+.thread .post:after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.thread .reply{
+    min-width: 0;
+}
+
+/* На хуй бесполезные галочки */
+input.turnmeoff,
+.passcode-banner{
+    display: none;
+}
+
+.file-attr a[href$=".webm"],
+.file-attr a[href$=".jpg"],
+.file-attr a[href$=".png"],
+.file-attr a[href$=".gif"]{
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    height: 100%;
+}
+
+.file-attr a[href$=".webm"] + img{ display: none; }
+
+.file-attr a[href$=".webm"]:after{ content: "WEBM"; }
+.file-attr a[href$=".png"]:after{ content: "PNG"; }
+.file-attr a[href$=".gif"]:after{ content: "GIF"; }
+
+.file-attr a[href$=".webm"]:after,
+.file-attr a[href$=".png"]:after,
+.file-attr a[href$=".gif"]:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    visibility: visible;
+    border-bottom-left-radius: 3px;
+}
+
+.post .image{
+    margin: 0 5px 5px 0;
+}
+
+.post .image{
+    position: relative;
+    z-index: 300;
+}
+
+body.replypage .thread .reply .reflink:before{
+    content: ""; /* На хуй все счётчики постов... */
+    margin: 0;
+}
+body.replypage .thread .post-wrapper:last-of-type .reply .reflink:before {
+    content: " #" counter(postcount, decimal) " "; /* ...кроме самого последнего. */
+    visibility: visible;
+    display: block;
+    white-space: pre;
+}
+body{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image:hover .file-attr .filesize{
+    z-index: 300;
+    display: block;
+}
+.image .file-attr .filesize,
+.file-attr a[href$=".webm"]:after,
+.file-attr a[href$=".png"]:after,
+.file-attr a[href$=".gif"]:after{
+    z-index: 300;
+    pointer-events: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 24px;
+    padding: 14px 10px;
+    color: #FFF;
+}
+.image .file-attr .filesize{
+    display: none;
+    border-top-left-radius: 3px;
+}
+.thread .post{
+    position: relative;
+}
+
+.thread .post-details{
+    display: block;
+    text-align: right;
+    position: absolute;
+    float: left;
+    width: 180px;
+    margin: 14px 0 0 -220px;
+    min-height: 100%;
+}
+/* Для выравнивания вправо */
+.thread .post-details .ananimas:after,
+.thread .post-details .post-email:after{
+    content: " ";
+    white-space: pre;
+    text-decoration: none;
+}
+
+.thread .post-details > *{
+    position: relative;
+}
+.thread .post-details .posttime,
+.thread .post-details .post-title{
+    display: block;
+}
+
+.thread .post.oppost .post-message{
+    background-color: transparent;
+    border: none;
+}
