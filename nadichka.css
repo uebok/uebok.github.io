@@ -203,6 +203,7 @@ input.turnmeoff,
     text-decoration: none;
     visibility: visible;
     /*border-bottom-left-radius: 3px;*/
+    border-radius: 0 3px 0 3px;
 }
 
 .post .image{
@@ -243,12 +244,13 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
     line-height: 24px;
     padding: 14px 10px;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     color: #FFF;
 }
 .image .file-attr .filesize{
     display: none;
     /*border-top-left-radius: 3px;*/
+    border-radius: 3px 0 3px 0;
 }
 .thread .post{
     position: relative;
