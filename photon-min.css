@@ -64,7 +64,7 @@ span.spoiler:after{
 span.spoiler:hover:after{
     top: 100%;
     bottom: 0;
-    background-position: 150% 0%;
+    background-position: 300px 0%;
 }
 span.spoiler:hover{
     text-decoration: underline;
