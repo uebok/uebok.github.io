@@ -109,7 +109,7 @@ span.spoiler:hover{
     margin-top: 16px;
 }
 
-.thread .post-details {
+.thread .post:not(.oppost) .post-details {
     padding: 0;
 }
 
@@ -186,6 +186,7 @@ input.turnmeoff,
 
 .post .image{
     margin: 0 5px 5px 0;
+    vertical-align: baseline;
 }
 
 .post .image{
