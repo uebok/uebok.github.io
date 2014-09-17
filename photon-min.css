@@ -46,12 +46,6 @@ span.spoiler{
     position: relative;
     display: inline-table;
     overflow: hidden;
-
-    text-decoration: underline;
-    text-decoration-color: #FE6;
-    text-decoration-style: double;
-    -moz-text-decoration-color: #FE6;
-    -moz-text-decoration-style: double;
 }
 span.spoiler:after{
     position: absolute;
@@ -73,6 +67,11 @@ span.spoiler:hover:after{
     background-position: 300px 0%;
 }
 span.spoiler:hover{
+    text-decoration: underline;
+    text-decoration-color: #FE6;
+    text-decoration-style: double;
+    -moz-text-decoration-color: #FE6;
+    -moz-text-decoration-style: double;
 }
 
 .post-details,
