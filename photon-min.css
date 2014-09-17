@@ -243,12 +243,11 @@ body{
     min-height: 100%;
 }
 
-.thread .post:not(.oppost) .post-details:hover > .desktop,
-.thread .post:not(.oppost) .post-details:hover .reflink{
+.thread .post-details:hover > .desktop,
+.thread .post-details:hover .reflink{
     visibility: visible;
 }
-.thread .post:not(.oppost) .post-details .postpanel,
-.thread .post-details > .desktop:not(.postpanel),
+.thread .post-details > .desktop,
 .thread .post-details .reflink{
     visibility: hidden;
 }
@@ -265,8 +264,7 @@ body{
     position: relative;
 }
 .thread .post-details .posttime,
-.thread .post-details .post-title,
-.thread .post-details > .desktop:not(.postpanel){
+.thread .post-details .post-title{
     display: block;
 }
 
