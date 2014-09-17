@@ -247,15 +247,15 @@ body{
 .thread .post:not(.oppost) .post-details:hover .reflink{
     visibility: visible;
 }
-.thread .post:not(.oppost) .post-details > .desktop,
-.thread .post:not(.oppost) .post-details .reflink{
+.thread .post:not(.oppost) .post-details .postpanel,
+.thread .post-details > .desktop:not(.postpanel),
+.thread .post-details .reflink{
     visibility: hidden;
 }
 
 /* Кривофикс выравнивания вправо */
 .thread .post-details .ananimas:after,
-.thread .post-details .post-email:after,
-.thread .post-details .postbtn-reply-href:after{
+.thread .post-details .post-email:after{
     content: " ";
     white-space: pre;
     text-decoration: none;
@@ -265,8 +265,7 @@ body{
     position: relative;
 }
 .thread .post-details .posttime,
-.thread .post-details .post-title,
-.thread .oppost .post-details .postpanel{
+.thread .post-details .post-title{
     display: block;
 }
 
