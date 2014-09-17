@@ -265,7 +265,8 @@ body{
     position: relative;
 }
 .thread .post-details .posttime,
-.thread .post-details .post-title{
+.thread .post-details .post-title,
+.thread .post-details > .desktop:not(.postpanel){
     display: block;
 }
 
