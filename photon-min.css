@@ -109,7 +109,7 @@ span.spoiler:hover{
     margin-top: 16px;
 }
 
-.thread .post:not(.oppost) .post-details {
+.thread .post-details {
     padding: 0;
 }
 
@@ -233,7 +233,7 @@ body{
     position: relative;
 }
 
-.thread .post:not(.oppost) .post-details{
+.thread .post-details{
     display: block;
     text-align: right;
     position: absolute;
@@ -253,18 +253,18 @@ body{
 }
 
 /* Кривофикс выравнивания вправо */
-.thread .post:not(.oppost) .post-details .ananimas:after,
-.thread .post:not(.oppost) .post-details .post-email:after{
+.thread .post-details .ananimas:after,
+.thread .post-details .post-email:after{
     content: " ";
     white-space: pre;
     text-decoration: none;
 }
 
-.thread .post:not(.oppost) .post-details > *{
+.thread .post-details > *{
     position: relative;
 }
-.thread .post:not(.oppost) .post-details .posttime,
-.thread .post:not(.oppost) .post-details .post-title{
+.thread .post-details .posttime,
+.thread .post-details .post-title{
     display: block;
 }
 
