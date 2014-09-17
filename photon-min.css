@@ -254,7 +254,8 @@ body{
 
 /* Кривофикс выравнивания вправо */
 .thread .post-details .ananimas:after,
-.thread .post-details .post-email:after{
+.thread .post-details .post-email:after,
+.thread .post-details > .desktop:not(.postpanel):after{
     content: " ";
     white-space: pre;
     text-decoration: none;
@@ -264,8 +265,7 @@ body{
     position: relative;
 }
 .thread .post-details .posttime,
-.thread .post-details .post-title,
-.thread .oppost .post-details .reflink{
+.thread .post-details .post-title{
     display: block;
 }
 
