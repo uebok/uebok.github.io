@@ -14,9 +14,14 @@ body,
 .post-message a:not(.post-reply-link):visited{
     color: #551A8B; /* Чтобы Татьяныч был счастлив */
 }
-a.post-reply-link{
+a.post-reply-link,
+a.expand-large-comment,
+a[href*="youtube.com"]{
+    text-decoration: underline;
     text-decoration-style: dotted;
     -moz-text-decoration-style: dotted;
+    border: none;
+    line-height: inherit;
 }
 .post-message .unkfunc{
     font-style: italic;
