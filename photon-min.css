@@ -12,7 +12,7 @@ body,
     font-family: 'PT Serif', Georgia, serif;
 }
 .post-message a:not(.post-reply-link):visited{
-    color: #551A8B; /* Лебедев одобряе */
+    color: #551A8B; /* Чтобы Татьяныч был счастлив */
 }
 a.post-reply-link{
     text-decoration-style: dotted;
@@ -46,6 +46,12 @@ span.spoiler{
     position: relative;
     display: inline-table;
     overflow: hidden;
+
+    text-decoration: underline;
+    text-decoration-color: #FE6;
+    text-decoration-style: double;
+    -moz-text-decoration-color: #FE6;
+    -moz-text-decoration-style: double;
 }
 span.spoiler:after{
     position: absolute;
@@ -67,11 +73,6 @@ span.spoiler:hover:after{
     background-position: 300px 0%;
 }
 span.spoiler:hover{
-    text-decoration: underline;
-    text-decoration-color: #FE6;
-    text-decoration-style: double;
-    -moz-text-decoration-color: #FE6;
-    -moz-text-decoration-style: double;
 }
 
 .post-details,
